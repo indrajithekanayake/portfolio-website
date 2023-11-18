@@ -1,0 +1,44 @@
+.read-more-target {
+  display: none;
+  transition: 0.25s ease;
+}
+
+.read-more-trigger {
+  color: #0000ff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+}
+
+body{
+  height: 100%;
+  text-align: justify;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+/* This will wrap your content and center it horizontally */
+#content {
+  max-width: 600px; /* You can set this to any max-width you prefer */
+  margin: 0 auto; /* This will center your content horizontally */
+  width: 100%; /* This ensures that #content takes up full width of the parent */
+}
+
+@media (min-width: 601px) {
+  #content {
+    margin-left: calc((100% - 600px) / 2);
+    margin-right: 0;
+  }
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
