@@ -17,13 +17,22 @@ body{
   text-align: justify;
   margin: 10px auto;
   padding: 0 10px;
+  padding-bottom: 80px;
+  font-family: "Poppins";
+  background-color: #acddde;
 }
 
-/* This will wrap your content and center it horizontally */
+hr {
+  height: 2px;
+  background-color: #000;
+  border: none; /* removes the default border */
+}
+
+
 #content {
-  max-width: 600px; /* You can set this to any max-width you prefer */
-  margin: 0 auto; /* This will center your content horizontally */
-  width: 100%; /* This ensures that #content takes up full width of the parent */
+  max-width: 600px; 
+  margin: 0 auto; 
+  width: 100%; 
 }
 
 @media (min-width: 601px) {
@@ -35,10 +44,30 @@ body{
 
 .footer {
   position: fixed;
-  right: 0;
-  bottom: 0;
   left: 0;
-  padding: 1rem;
+  bottom: 0;
+  width: 100%;
   background-color: #efefef;
   text-align: center;
+  /* No extra padding is necessary for the fixed-position button */
+  z-index: 5; /* Make sure this is less than the z-index of the button */
 }
+
+.scroll-to-top {
+  position: fixed; /* Fixed like the footer, but will scroll with the page */
+  right: 20px; /* Position from the right of the screen */
+  bottom: 20px; /* Position from the bottom of the screen */
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10; /* Ensure it stays on top of other content */
+}
+
+.scroll-to-top:hover {
+  background-color: #e2e6ea;
+}
+
+
+
